@@ -1,0 +1,1096 @@
+ERROR 2025-04-27 16:15:35,460 log Internal Server Error: /admin/auth/user/1/change/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: "line.fields|length_is:'1'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'length_is'
+ERROR 2025-04-27 16:15:35,467 basehttp "GET /admin/auth/user/1/change/ HTTP/1.1" 500 721391
+ERROR 2025-04-27 16:15:52,479 log Internal Server Error: /admin/auth/user/1/change/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: "line.fields|length_is:'1'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'length_is'
+ERROR 2025-04-27 16:15:52,481 basehttp "GET /admin/auth/user/1/change/ HTTP/1.1" 500 721234
+ERROR 2025-04-27 22:05:39,887 log Internal Server Error: /admin/auth/group/add/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: "line.fields|length_is:'1'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'length_is'
+ERROR 2025-04-27 22:05:39,891 basehttp "GET /admin/auth/group/add/ HTTP/1.1" 500 717839
+ERROR 2025-05-02 16:27:33,158 log Internal Server Error: /admin/auth/user/1/change/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: "line.fields|length_is:'1'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'length_is'
+ERROR 2025-05-02 16:27:33,180 basehttp "GET /admin/auth/user/1/change/ HTTP/1.1" 500 721139
+ERROR 2025-05-09 14:23:32,850 log Internal Server Error: /admin/auth/group/add/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+KeyError: "line.fields|length_is:'1'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 862, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'length_is'
+ERROR 2025-05-09 14:23:32,874 basehttp "GET /admin/auth/group/add/ HTTP/1.1" 500 718716
+ERROR 2025-05-09 14:49:24,563 log Internal Server Error: /students/course/1/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\detail.py", line 113, in get
+    context = self.get_context_data(object=self.object)
+  File "D:\Baha\PythonProjects\finaldiploma\apps\students\views.py", line 67, in get_context_data
+    context['module'] = course.modules.all()[0]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 436, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR 2025-05-09 14:49:24,565 basehttp "GET /students/course/1/ HTTP/1.1" 500 96057
+ERROR 2025-05-09 14:49:33,102 log Internal Server Error: /students/course/1/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\detail.py", line 113, in get
+    context = self.get_context_data(object=self.object)
+  File "D:\Baha\PythonProjects\finaldiploma\apps\students\views.py", line 67, in get_context_data
+    context['module'] = course.modules.all()[0]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 436, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR 2025-05-09 14:49:33,104 basehttp "GET /students/course/1/ HTTP/1.1" 500 96057
+ERROR 2025-05-09 14:52:54,539 log Internal Server Error: /students/course/1/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\detail.py", line 113, in get
+    context = self.get_context_data(object=self.object)
+  File "D:\Baha\PythonProjects\finaldiploma\apps\students\views.py", line 67, in get_context_data
+    context['module'] = course.modules.all()[0]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 436, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR 2025-05-09 14:52:54,566 basehttp "GET /students/course/1/ HTTP/1.1" 500 104940
+ERROR 2025-05-09 14:53:04,768 log Internal Server Error: /students/course/2/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\detail.py", line 113, in get
+    context = self.get_context_data(object=self.object)
+  File "D:\Baha\PythonProjects\finaldiploma\apps\students\views.py", line 67, in get_context_data
+    context['module'] = course.modules.all()[0]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 436, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR 2025-05-09 14:53:04,794 basehttp "GET /students/course/2/ HTTP/1.1" 500 105067
+ERROR 2025-05-09 14:54:41,002 log Internal Server Error: /students/course/2/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\detail.py", line 113, in get
+    context = self.get_context_data(object=self.object)
+  File "D:\Baha\PythonProjects\finaldiploma\apps\students\views.py", line 67, in get_context_data
+    context['module'] = course.modules.all()[0]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 436, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR 2025-05-09 14:54:41,042 basehttp "GET /students/course/2/ HTTP/1.1" 500 105067
+ERROR 2025-05-09 14:57:11,651 log Internal Server Error: /students/course/1/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\detail.py", line 113, in get
+    context = self.get_context_data(object=self.object)
+  File "D:\Baha\PythonProjects\finaldiploma\apps\students\views.py", line 67, in get_context_data
+    context['module'] = course.modules.all()[0]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 436, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR 2025-05-09 14:57:11,675 basehttp "GET /students/course/1/ HTTP/1.1" 500 105077
+ERROR 2025-05-11 11:37:13,593 log Internal Server Error: /students/course/1/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\detail.py", line 113, in get
+    context = self.get_context_data(object=self.object)
+  File "D:\Baha\PythonProjects\finaldiploma\apps\students\views.py", line 67, in get_context_data
+    context['module'] = course.modules.all()[0]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 436, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR 2025-05-11 11:37:13,653 runserver HTTP GET /students/course/1/ 500 [0.13, 127.0.0.1:49560]
+ERROR 2025-05-11 11:41:36,294 log Internal Server Error: /students/enroll-course/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 200, in render_to_response
+    template=self.get_template_names(),
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 212, in get_template_names
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: TemplateResponseMixin requires either a definition of 'template_name' or an implementation of 'get_template_names()'
+ERROR 2025-05-11 11:41:36,319 runserver HTTP GET /students/enroll-course/ 500 [0.06, 127.0.0.1:49718]
+ERROR 2025-05-11 11:48:01,923 log Internal Server Error: /students/enroll-course/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 200, in render_to_response
+    template=self.get_template_names(),
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 212, in get_template_names
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: TemplateResponseMixin requires either a definition of 'template_name' or an implementation of 'get_template_names()'
+ERROR 2025-05-11 11:48:01,980 runserver HTTP GET /students/enroll-course/ 500 [0.38, 127.0.0.1:49795]
+ERROR 2025-05-11 11:48:02,769 log Internal Server Error: /students/enroll-course/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 200, in render_to_response
+    template=self.get_template_names(),
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 212, in get_template_names
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: TemplateResponseMixin requires either a definition of 'template_name' or an implementation of 'get_template_names()'
+ERROR 2025-05-11 11:48:02,796 runserver HTTP GET /students/enroll-course/ 500 [0.06, 127.0.0.1:49795]
+ERROR 2025-05-11 11:48:03,576 log Internal Server Error: /students/enroll-course/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 200, in render_to_response
+    template=self.get_template_names(),
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 212, in get_template_names
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: TemplateResponseMixin requires either a definition of 'template_name' or an implementation of 'get_template_names()'
+ERROR 2025-05-11 11:48:03,603 runserver HTTP GET /students/enroll-course/ 500 [0.06, 127.0.0.1:49795]
+ERROR 2025-05-11 11:48:04,238 log Internal Server Error: /students/enroll-course/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 200, in render_to_response
+    template=self.get_template_names(),
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 212, in get_template_names
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: TemplateResponseMixin requires either a definition of 'template_name' or an implementation of 'get_template_names()'
+ERROR 2025-05-11 11:48:04,263 runserver HTTP GET /students/enroll-course/ 500 [0.06, 127.0.0.1:49795]
+ERROR 2025-05-11 11:48:04,825 log Internal Server Error: /students/enroll-course/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 200, in render_to_response
+    template=self.get_template_names(),
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 212, in get_template_names
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: TemplateResponseMixin requires either a definition of 'template_name' or an implementation of 'get_template_names()'
+ERROR 2025-05-11 11:48:04,853 runserver HTTP GET /students/enroll-course/ 500 [0.06, 127.0.0.1:49795]
+ERROR 2025-05-11 11:48:05,491 log Internal Server Error: /students/enroll-course/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 200, in render_to_response
+    template=self.get_template_names(),
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 212, in get_template_names
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: TemplateResponseMixin requires either a definition of 'template_name' or an implementation of 'get_template_names()'
+ERROR 2025-05-11 11:48:05,520 runserver HTTP GET /students/enroll-course/ 500 [0.07, 127.0.0.1:49795]
+ERROR 2025-05-11 11:56:39,816 runserver HTTP GET /static/admin/js/core.js 500 [0.40, 127.0.0.1:49862]
+ERROR 2025-05-11 22:50:13,665 log Internal Server Error: /students/course/2/2/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\detail.py", line 113, in get
+    context = self.get_context_data(object=self.object)
+  File "D:\Baha\PythonProjects\finaldiploma\apps\students\views.py", line 65, in get_context_data
+    context['module'] = course.modules.get(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+apps.courses.models.Module.DoesNotExist: Module matching query does not exist.
+ERROR 2025-05-11 22:50:13,710 runserver HTTP GET /students/course/2/2/ 500 [0.15, 127.0.0.1:55833]
