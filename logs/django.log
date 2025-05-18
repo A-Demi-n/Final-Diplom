@@ -6010,3 +6010,18 @@ INFO 2025-05-18 15:37:15,006 runserver HTTP GET /students/courses/ 200 [0.04, 12
 INFO 2025-05-18 15:37:15,020 runserver HTTP GET /static/debug_toolbar/css/toolbar.css 304 [0.00, 127.0.0.1:52072]
 INFO 2025-05-18 15:37:15,023 runserver HTTP GET /static/debug_toolbar/js/toolbar.js 304 [0.00, 127.0.0.1:52072]
 INFO 2025-05-18 15:37:15,025 runserver HTTP GET /static/debug_toolbar/css/print.css 304 [0.00, 127.0.0.1:52075]
+WARNING 2025-05-18 15:49:21,191 log Forbidden (Permission denied): /course/create/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 108, in dispatch
+    return self.handle_no_permission()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 48, in handle_no_permission
+    raise PermissionDenied(self.get_permission_denied_message())
+django.core.exceptions.PermissionDenied

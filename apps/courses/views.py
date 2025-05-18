@@ -18,6 +18,8 @@ from .models import Course
 from .models import Module, Content
 from .models import Subject
 
+"""TO DO: Adding need to add new bottom, to redirect another page"""
+
 
 class ManageCourseListView(ListView):
     model = Course
