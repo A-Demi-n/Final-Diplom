@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <title>{% block title %}Ademi{% endblock %}</title>
-    <link href="{% static "css/base.css" %}" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
   </head>
   <body>
     <div id="header">
@@ -14,7 +14,7 @@
           <li>
             <form method="post" action="{% url 'logout' %}" style="display: inline;">
               {% csrf_token %}
-              <button type="submit" style="background:none; border:none; padding:0; color:#00f; text-decoration:underline; cursor:pointer;">
+              <button type="submit" class="logout-button">
                 Sign out
               </button>
             </form>
@@ -24,10 +24,14 @@
         {% endif %}
       </ul>
     </div>
-    <div id="content">
-      {% block content %}
-      {% endblock %}
+
+    <div id="content-wrapper">
+      <div id="content">
+        {% block content %}
+        {% endblock %}
+      </div>
     </div>
+
     {% block include_js %}
     {% endblock %}
     <script>
