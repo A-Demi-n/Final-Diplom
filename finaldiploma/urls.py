@@ -29,7 +29,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('course/', include('apps.courses.urls')),
     path('', CourseListView.as_view(), name='course_list'),
-    path('students/', include('apps.students.urls')),
+    path('workers/', include('apps.workers.urls')),
     path('api/', include('apps.courses.api.urls', namespace='api')),
     path('chat/', include('apps.chat.urls', namespace='chat')),
 ]

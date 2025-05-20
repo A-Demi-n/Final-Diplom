@@ -8,7 +8,7 @@ class CourseChatRoomViewTests(TestCase):
         self.client = Client()
         self.user = User.objects.create_user(username='testuser', password='12345')
         self.course = Course.objects.create(title='Test Course')
-        self.course.students.add(self.user)
+        self.course.workers.add(self.user)
         self.course.save()
 
     def test_authenticated_user_can_access_own_course_chat_room(self):

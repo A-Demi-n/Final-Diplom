@@ -2,22 +2,22 @@
 
 {% block title %}
   {% if subject %}
-    {{ subject.title }} courses
+    {{ subject.title }} groups
   {% else %}
-    All courses
+    Choose your group and course
   {% endif %}
 {% endblock %}
 
 {% block content %}
   <h1>
     {% if subject %}
-      {{ subject.title }} courses
+      {{ subject.title }} groups
     {% else %}
-      All courses
+      Choose your group and course
     {% endif %}
   </h1>
   <div class="contents">
-    <h3>Subjects</h3>
+    <h3>Groups</h3>
     <ul id="modules">
       <li {% if not subject %}class="selected"{% endif %}>
         <a href="{% url "course_list" %}">All</a>

@@ -36,7 +36,7 @@ class Migration(migrations.Migration):
                 ('overview', models.TextField()),
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('owner', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='courses_created', to=settings.AUTH_USER_MODEL)),
-                ('students', models.ManyToManyField(blank=True, related_name='courses_joined', to=settings.AUTH_USER_MODEL)),
+                ('workers', models.ManyToManyField(blank=True, related_name='courses_joined', to=settings.AUTH_USER_MODEL)),
                 ('subject', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='courses', to='courses.subject')),
             ],
             options={

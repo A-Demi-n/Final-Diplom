@@ -305,56 +305,69 @@ ul#course-modules li:hover {
     padding-left: 20px;
 }
 
-#chat {
-    top: 64px;
-    bottom: 0;
-    position: fixed;
+chat-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px); /* учитываем высоту header */
     width: 100%;
-    overflow-y: scroll;
-    padding-bottom: 150px;
+}
+
+#chat {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: transparent;
 }
 
 #chat .message {
     background: #efefef;
     padding: 10px 20px;
     border-radius: 4px;
-    width: auto;
-    display: inline;
-    float: left;
-    margin: 10px 10px 0;
-    min-width: 440px;
-    clear: both;
+    max-width: 60%;
+    word-wrap: break-word;
 }
 
 #chat .message.me {
-    display: inline;
-    float: right;
+    align-self: flex-end;
     background: #DCEDE0;
     color: #56A668;
 }
 
+#chat .message.other {
+    align-self: flex-start;
+    background: #2196F3;
+    color: white;
+}
+
 #chat .date {
+    font-size: 12px;
     color: #aaa;
     font-style: italic;
-    font-size: 12px;
+    margin-left: 10px;
 }
 
 #chat-input {
-    position: absolute;
-    bottom: 0;
-    background: #efefef;
-    width: 100%;
-    padding-top: 20px;
+    display: flex;
+    padding: 15px 20px;
+    border-top: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.95);
 }
 
-#chat-input input {
-    width: 96%;
-    position: left;
-    float: left;
-    display: inline;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding-left: 0;
-    padding-right: 0;
+#chat-message-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
 }
-Ф
+
+#chat-message-submit {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

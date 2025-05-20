@@ -29,7 +29,7 @@ class StudentEnrollCourseViewTest(TestCase):
             'course': self.course.id
         })
         self.assertRedirects(response, reverse('student_course_detail', args=[self.course.id]))
-        self.assertIn(self.user, self.course.students.all())
+        self.assertIn(self.user, self.course.workers.all())
 
 
 class StudentCourseListViewTest(TestCase):
@@ -37,7 +37,7 @@ class StudentCourseListViewTest(TestCase):
         self.user = User.objects.create_user(username='student3', password='pass')
         self.subject = Subject.objects.create(title='Physics', slug='physics')
         self.course = Course.objects.create(title='Mechanics', subject=self.subject, slug='mech', owner=self.user)
-        self.course.students.add(self.user)
+        self.course.workers.add(self.user)
     def test_course_list_for_enrolled_student(self):
         self.client.login(username='student3', password='pass')
         response = self.client.get(reverse('student_course_list'))
@@ -49,7 +49,7 @@ class StudentCourseDetailViewTest(TestCase):
         self.user = User.objects.create_user(username='student4', password='pass')
         self.subject = Subject.objects.create(title='Chemistry', slug='chemistry')
         self.course = Course.objects.create(title='Organic Chemistry', subject=self.subject, slug='orgchem', owner=self.user)
-        self.course.students.add(self.user)
+        self.course.workers.add(self.user)
         self.module = Module.objects.create(course=self.course, title='Intro')
 
     def test_student_course_detail_shows_module(self):

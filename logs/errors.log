@@ -1272,3 +1272,117 @@ Traceback (most recent call last):
     assert isinstance(view.schema, AutoSchema), (
 AssertionError: Incompatible AutoSchema used on View <class 'apps.courses.api.views.CourseViewSet'>. Is DRF's DEFAULT_SCHEMA_CLASS pointing to "drf_spectacular.openapi.AutoSchema" or any other drf-spectacular compatible AutoSchema?
 ERROR 2025-05-15 00:03:58,155 runserver HTTP GET /api/schema/ 500 [0.07, 127.0.0.1:52452]
+ERROR 2025-05-20 22:08:24,107 log Internal Server Error: /workers/courses/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\list.py", line 158, in get
+    self.object_list = self.get_queryset()
+  File "D:\Baha\PythonProjects\finaldiploma\apps\workers\views.py", line 48, in get_queryset
+    return qs.filter(workers__in=[self.request.user])
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\sql\query.py", line 1523, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\sql\query.py", line 1330, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\sql\query.py", line 1802, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'workers' into field. Choices are: created, id, modules, overview, owner, owner_id, slug, students, subject, subject_id, title
+ERROR 2025-05-20 22:08:24,142 runserver HTTP GET /workers/courses/ 500 [0.16, 127.0.0.1:60950]
+ERROR 2025-05-20 22:10:37,206 log Internal Server Error: /workers/courses/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\list.py", line 158, in get
+    self.object_list = self.get_queryset()
+  File "D:\Baha\PythonProjects\finaldiploma\apps\workers\views.py", line 48, in get_queryset
+    return qs.filter(workers__in=[self.request.user])
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 1481, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 1499, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 1506, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\sql\query.py", line 1523, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\sql\query.py", line 1330, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\sql\query.py", line 1802, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'workers' into field. Choices are: created, id, modules, overview, owner, owner_id, slug, students, subject, subject_id, title
+ERROR 2025-05-20 22:10:37,238 runserver HTTP GET /workers/courses/ 500 [0.08, 127.0.0.1:61009]
+ERROR 2025-05-20 22:15:49,701 log Internal Server Error: /workers/course/1/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\current_thread_executor.py", line 40, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\views\generic\detail.py", line 113, in get
+    context = self.get_context_data(object=self.object)
+  File "D:\Baha\PythonProjects\finaldiploma\apps\workers\views.py", line 69, in get_context_data
+    context['module'] = course.modules.all()[0]
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\db\models\query.py", line 436, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+ERROR 2025-05-20 22:15:49,738 runserver HTTP GET /workers/course/1/ 500 [0.08, 127.0.0.1:61055]

@@ -12,7 +12,7 @@ from django.apps import apps
 from django.db.models import Count
 from django.core.cache import cache
 from braces.views import CsrfExemptMixin, JsonRequestResponseMixin
-from apps.students.forms import CourseEnrollForm
+from apps.workers.forms import CourseEnrollForm
 from .forms import ModuleFormSet
 from .models import Course
 from .models import Module, Content
