@@ -185,6 +185,9 @@ CHANNEL_LAYERS = {
     }
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://sewing-shop-nq8qi.ondigitalocean.app',
+]
 
 LOGGING = {
     'version': 1,
