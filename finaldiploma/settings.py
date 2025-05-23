@@ -99,10 +99,24 @@ WSGI_APPLICATION = 'finaldiploma.wsgi.application'
 ASGI_APPLICATION = 'finaldiploma.asgi.application'
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / env('DB_NAME'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / env('DB_NAME'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'defaultdb',
+        'USER': 'doadmin',
+        'PASSWORD': 'AVNS_wBwRcfnYEcRK1pm17YG',
+        'HOST': 'db-postgresql-nyc3-82718-do-user-22735144-0.k.db.ondigitalocean.com',
+        'PORT': '25060',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
 
