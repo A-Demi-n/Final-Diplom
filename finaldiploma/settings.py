@@ -109,16 +109,17 @@ ASGI_APPLICATION = 'finaldiploma.asgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'defaultdb',
-        'USER': 'doadmin',
-        'PASSWORD': 'AVNS_wBwRcfnYEcRK1pm17YG',
-        'HOST': 'db-postgresql-nyc3-82718-do-user-22735144-0.k.db.ondigitalocean.com',
-        'PORT': '25060',
+        'NAME': env('DB_NAME'),
+        'USER': env('DB_USER'),
+        'PASSWORD': env('DB_PASSWORD'),
+        'HOST': env('DB_HOST'),
+        'PORT': env('DB_PORT'),
         'OPTIONS': {
             'sslmode': 'require',
         },
     }
 }
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
