@@ -1,2 +1,1 @@
-release: ./render-build.sh
 python-3.10.13
