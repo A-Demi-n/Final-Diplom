@@ -107,3 +107,14 @@ INFO 2025-05-24 19:36:26,240 basehttp "GET / HTTP/1.1" 200 13590
 WARNING 2025-05-24 19:36:27,773 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
 WARNING 2025-05-24 19:36:27,773 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
 INFO 2025-05-24 19:36:29,423 basehttp "GET / HTTP/1.1" 200 13590
+INFO 2025-05-24 19:47:22,046 basehttp "GET / HTTP/1.1" 200 13593
+WARNING 2025-05-24 19:47:23,471 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-24 19:47:23,471 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-24 19:47:26,847 basehttp "GET / HTTP/1.1" 200 13589
+WARNING 2025-05-24 19:47:28,277 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-24 19:47:28,277 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-24 19:47:29,061 basehttp "GET /course/utyuzhniki/ HTTP/1.1" 200 12916
+WARNING 2025-05-24 19:47:30,431 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-05-24 19:47:30,432 basehttp - Broken pipe from ('127.0.0.1', 52027)
+INFO 2025-05-24 19:47:33,251 basehttp "POST /workers/enroll-course/ HTTP/1.1" 302 0
+INFO 2025-05-24 19:47:35,604 basehttp "GET /workers/course/2/ HTTP/1.1" 200 12858
