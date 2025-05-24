@@ -1,26 +1,130 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>{% block title %}Ademi{% endblock %}</title>
-    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(to bottom, #E9F0FF, #DEE7FF);
+        color: #333;
+      }
+
+      #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 20px 30px;
+        border-radius: 20px 20px 0 0;
+        border-bottom: 4px solid #3BC172;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .logo {
+        font-size: 32px;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+        color: #FFD700;
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-shadow:
+          2px 2px 4px rgba(0, 0, 0, 0.6),
+          0 0 6px rgba(255, 215, 0, 0.5);
+      }
+
+      .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .menu li {
+        display: inline;
+      }
+
+      .logout-button, .signin-button {
+        background-color: #5F7DF3;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+      }
+
+      .logout-button:hover,
+      .signin-button:hover {
+        background-color: #3d60d1;
+      }
+
+      #content-wrapper {
+        padding: 30px;
+      }
+
+      #content {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 30px;
+        border-radius: 24px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        max-width: 1000px;
+        margin: auto;
+      }
+
+.card {
+  background-color: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+  max-width: 1000px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+
+.card-header {
+  background-color: #f1f1f1;
+  padding: 20px 30px;
+  font-size: 22px;
+  font-weight: 500;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+      .card-body {
+        padding: 24px 30px;
+      }
+    </style>
   </head>
   <body>
     <div id="header">
-      <a href="/" class="logo">Ademi</a>
+      <a href="/" class="logo">ADEMI</a>
       <ul class="menu">
         {% if request.user.is_authenticated %}
           <li>
             <form method="post" action="{% url 'logout' %}" style="display: inline;">
               {% csrf_token %}
-              <button type="submit" class="logout-button">
-                Sign out
-              </button>
+              <button type="submit" class="logout-button">Sign out</button>
             </form>
           </li>
         {% else %}
-          <li><a href="{% url 'login' %}">Sign in</a></li>
+          <li>
+            <a href="{% url 'login' %}" class="signin-button">Sign in</a>
+          </li>
         {% endif %}
       </ul>
     </div>
@@ -32,13 +136,11 @@
       </div>
     </div>
 
-    {% block include_js %}
-    {% endblock %}
+    {% block include_js %}{% endblock %}
     <script>
-      document.addEventListener('DOMContentLoaded', (event) => {
-        {% block domready %}
-        {% endblock %}
-      })
+      document.addEventListener('DOMContentLoaded', () => {
+        {% block domready %}{% endblock %}
+      });
     </script>
   </body>
 </html>

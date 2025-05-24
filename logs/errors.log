@@ -1,0 +1,50 @@
+ERROR 2025-05-24 18:28:34,219 log Internal Server Error: /course/zakrojshiki/
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 976, in do_if
+    nodelist = parser.parse(("endif",))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 523, in parse
+    self.unclosed_block_tag(parse_until)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 590, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 81: 'if'. Looking for one of: endif.
+ERROR 2025-05-24 18:28:34,250 basehttp "GET /course/zakrojshiki/ HTTP/1.1" 500 185855

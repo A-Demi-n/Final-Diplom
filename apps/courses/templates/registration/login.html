@@ -4,39 +4,63 @@
 
 {% block content %}
 <div style="display: flex; justify-content: center; align-items: center; height: 80vh;">
-  <div style="width: 90%; max-width: 320px; padding: 30px; border: 1px solid #ccc; border-radius: 10px; background: #f9f9f9; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <h2 style="text-align: center; margin-bottom: 20px;">Log-in</h2>
+  <div style="
+    width: 90%;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  ">
+    <h2 style="text-align: center; margin-bottom: 20px; color: #5F7DF3;">Log-in</h2>
 
     {% if form.errors %}
-      <p style="color: red; text-align: center;">Your username or password incorrect, Pls try again.</p>
+      <p style="color: #e74c3c; text-align: center;">Your username or password is incorrect. Please try again.</p>
     {% else %}
-      <p style="text-align: center;">Pls use this form to log in:</p>
+      <p style="text-align: center; color: #555;">Please use this form to log in:</p>
     {% endif %}
 
     <form action="{% url 'login' %}" method="post" style="margin-top: 20px;">
       {% csrf_token %}
       <div style="margin-bottom: 15px;">
-        <label for="id_username">Username:</label>
-        <input type="text" name="username" id="id_username" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px;">
+        <label for="id_username" style="color: #333;">Username:</label>
+        <input type="text" name="username" id="id_username" required style="
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #ccc;
+          border-radius: 12px;
+          background-color: #f4f6ff;
+          font-size: 14px;
+        ">
       </div>
       <div style="margin-bottom: 20px;">
-        <label for="id_password">Password:</label>
-        <input type="password" name="password" id="id_password" required style="width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px;">
+        <label for="id_password" style="color: #333;">Password:</label>
+        <input type="password" name="password" id="id_password" required style="
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #ccc;
+          border-radius: 12px;
+          background-color: #f4f6ff;
+          font-size: 14px;
+        ">
       </div>
       <input type="hidden" name="next" value="{{ next }}">
       <div style="text-align: center;">
         <button type="submit" style="
-          width: 40%;
-          padding: 8px;
-          background-color: #28a745;
+          width: 60%;
+          padding: 10px;
+          background-color: #5F7DF3;
           color: white;
-          font-size: 14px;
+          font-size: 15px;
+          font-weight: 500;
           border: none;
-          border-radius: 5px;
+          border-radius: 14px;
           cursor: pointer;
           transition: background-color 0.3s ease;
-          ">
-          Log-in
+        ">
+          Log in
         </button>
       </div>
     </form>

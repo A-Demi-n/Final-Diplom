@@ -24,6 +24,8 @@ DEBUG = get_env_variable(env, 'DEBUG', default=False, cast=bool)
 ALLOWED_HOSTS = get_env_variable(env, 'ALLOWED_HOSTS', default=['127.0.0.1', 'localhost'], cast=list)
 
 # Application definition
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 INSTALLED_APPS = [
     #libs
