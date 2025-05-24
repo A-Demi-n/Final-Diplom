@@ -167,11 +167,11 @@ LOGIN_REDIRECT_URL = reverse_lazy('student_course_list')
 
 CACHES = {
     'default': {
-#        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-#        'LOCATION': 'redis://127.0.0.1:6379',
-        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-        'LOCATION': os.path.join(BASE_DIR, 'django_cache'),
-
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://default:AVNS_RqjxGS2gXEzjZiOvgdG@db-valkey-nyc3-32511-do-user-22735144-0.k.db.ondigitalocean.com:25061',
+        'OPTIONS': {
+            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+        }
     }
 }
 
@@ -184,20 +184,23 @@ INTERNAL_IPS = [
     '127.0.0.1',
 ]
 
-#CHANNEL_LAYERS = {
-#    'default': {
-#        'BACKEND': 'channels_redis.core.RedisChannelLayer',
-#        'CONFIG': {
-#            'hosts': [('127.0.0.1', 6379)],
-#        },
-#   },
-#}
-
 CHANNEL_LAYERS = {
     "default": {
-        "BACKEND": "channels.layers.InMemoryChannelLayer",
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [
+                "redis://default:AVNS_RqjxGS2gXEzjZiOvgdG@db-valkey-nyc3-32511-do-user-22735144-0.k.db.ondigitalocean.com:25061"
+            ],
+        },
     }
 }
+
+
+#CHANNEL_LAYERS = {
+#    "default": {
+#        "BACKEND": "channels.layers.InMemoryChannelLayer",
+#    }
+#}
 
 CSRF_TRUSTED_ORIGINS = [
     'https://sewing-shop-nq8qi.ondigitalocean.app',
