@@ -25,9 +25,10 @@
   const requestUser = JSON.parse(
     document.getElementById('request-user').textContent
   );
-  const url = 'ws://' + window.location.host +
-              '/ws/chat/room/' + courseId + '/';
+  const wsScheme = window.location.protocol === "https:" ? "wss" : "ws";
+  const url = wsScheme + '://' + window.location.host + '/ws/chat/room/' + courseId + '/';
   const chatSocket = new WebSocket(url);
+
 
   chatSocket.onmessage = function(event) {
     const data = JSON.parse(event.data);
