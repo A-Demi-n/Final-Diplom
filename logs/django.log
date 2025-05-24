@@ -87,3 +87,23 @@ WARNING 2025-05-24 18:54:28,721 basehttp "GET /.well-known/appspecific/com.chrom
 INFO 2025-05-24 18:55:01,464 basehttp "GET / HTTP/1.1" 200 13589
 WARNING 2025-05-24 18:55:02,913 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
 WARNING 2025-05-24 18:55:02,916 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-24 19:32:19,787 basehttp "GET / HTTP/1.1" 200 13593
+WARNING 2025-05-24 19:32:21,216 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-24 19:32:21,219 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-24 19:35:22,348 basehttp "GET / HTTP/1.1" 200 13593
+WARNING 2025-05-24 19:35:23,786 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-24 19:35:23,787 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-24 19:35:27,657 basehttp - Broken pipe from ('127.0.0.1', 51366)
+INFO 2025-05-24 19:35:27,747 basehttp "GET / HTTP/1.1" 200 13574
+WARNING 2025-05-24 19:35:29,623 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-24 19:35:29,623 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-24 19:35:30,282 basehttp "GET / HTTP/1.1" 200 13589
+WARNING 2025-05-24 19:35:31,724 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-24 19:35:31,725 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-24 19:35:33,131 basehttp "GET / HTTP/1.1" 200 13589
+WARNING 2025-05-24 19:35:34,596 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-24 19:35:34,599 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-24 19:36:26,240 basehttp "GET / HTTP/1.1" 200 13590
+WARNING 2025-05-24 19:36:27,773 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-24 19:36:27,773 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-24 19:36:29,423 basehttp "GET / HTTP/1.1" 200 13590
