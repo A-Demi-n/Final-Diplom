@@ -54,16 +54,18 @@
   const input = document.getElementById('chat-message-input');
   const submitButton = document.getElementById('chat-message-submit');
 
-  submitButton.addEventListener('click', function(event) {
-    const message = input.value;
-    if(message) {
-      // send message in JSON format
-      chatSocket.send(JSON.stringify({'message': message}));
-      // clear input
+submitButton.addEventListener('click', function(event) {
+  const message = input.value;
+  if (message) {
+    if (chatSocket.readyState === WebSocket.OPEN) {
+      chatSocket.send(JSON.stringify({ 'message': message }));
       input.value = '';
       input.focus();
+    } else {
+      console.warn("WebSocket not open. Message not sent.");
     }
-  });
+  }
+});
 
   input.addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
