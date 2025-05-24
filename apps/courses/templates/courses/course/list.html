@@ -4,7 +4,7 @@
   {% if subject %}
     {{ subject.title }} groups
   {% else %}
-    Choose your group and course
+    Training for sewing workshop staff
   {% endif %}
 {% endblock %}
 
@@ -13,7 +13,7 @@
     {% if subject %}
       {{ subject.title }} groups
     {% else %}
-      Choose your group and course
+      Training for sewing workshop staff
     {% endif %}
   </h1>
   <div class="contents">
@@ -44,7 +44,7 @@
         <p>
           <a href="{% url "course_list_subject" subject.slug %}">{{ subject }}</a>.
             {{ course.total_modules }} modules.
-            Instructor: {{ course.owner.get_full_name }}
+        {# Instructor: {{ object.owner.get_full_name }} #}
         </p>
       {% endwith %}
     {% endfor %}

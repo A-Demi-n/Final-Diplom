@@ -165,15 +165,25 @@ from django.urls import reverse_lazy
 LOGIN_REDIRECT_URL = reverse_lazy('student_course_list')
 
 
-CACHES = {
-    'default': {
-        'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://default:AVNS_RqjxGS2gXEzjZiOvgdG@db-valkey-nyc3-32511-do-user-22735144-0.k.db.ondigitalocean.com:25061',
-        'OPTIONS': {
-            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+if DEBUG:
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
         }
     }
-}
+else:
+    CACHES = {
+        'default': {
+            'BACKEND': 'django_redis.cache.RedisCache',
+            'LOCATION': 'rediss://default:AVNS_RqjxGS2gXEzjZiOvgdG@db-valkey-nyc3-32511-do-user-22735144-0.k.db.ondigitalocean.com:25061',
+            'OPTIONS': {
+                'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+                'SSL': True,
+            }
+        }
+    }
+
+
 
 
 CACHE_MIDDLEWARE_ALIAS = 'default'
@@ -184,16 +194,25 @@ INTERNAL_IPS = [
     '127.0.0.1',
 ]
 
-CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer",
-        "CONFIG": {
-            "hosts": [
-                "redis://default:AVNS_RqjxGS2gXEzjZiOvgdG@db-valkey-nyc3-32511-do-user-22735144-0.k.db.ondigitalocean.com:25061"
-            ],
-        },
+if DEBUG:
+    CHANNEL_LAYERS = {
+        "default": {
+            "BACKEND": "channels.layers.InMemoryChannelLayer",
+        }
     }
-}
+else:
+    CHANNEL_LAYERS = {
+        "default": {
+            "BACKEND": "channels_redis.core.RedisChannelLayer",
+            "CONFIG": {
+                "hosts": [{
+                    "address": "rediss://default:AVNS_RqjxGS2gXEzjZiOvgdG@db-valkey-nyc3-32511-do-user-22735144-0.k.db.ondigitalocean.com:25061",
+                    "ssl": True
+                }],
+            },
+        }
+    }
+
 
 
 #CHANNEL_LAYERS = {
