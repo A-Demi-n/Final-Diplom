@@ -42,5 +42,59 @@
         {% endblock %}
       })
     </script>
+
+  <div class="animated-bubble"></div>
+
+<style>
+  .animated-bubble {
+    position: fixed;
+    bottom: 80px;
+    left: 80px;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at center, #253aa8, #4b39c2);
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: bubbleFloat 3s ease-in-out infinite;
+    z-index: 0; /* за всем остальным */
+  }
+
+  @keyframes bubbleFloat {
+    0%   { transform: translateY(0px) scale(1); }
+    50%  { transform: translateY(-20px) scale(1.05); }
+    100% { transform: translateY(0px) scale(1); }
+  }
+</style>
+
+<div class="bubble-pop"></div>
+
+<style>
+.bubble-pop {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(50% + 220px); /* примерно под формочкой */
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at center, #2a3ca8, #4d3cc4);
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  animation: floatPop 4s ease-in-out infinite;
+  z-index: 0;
+}
+
+.bubble-pop:hover {
+  transform: scale(0);
+  opacity: 0;
+}
+
+@keyframes floatPop {
+  0%   { transform: translateX(-50%) translateY(0); }
+  50%  { transform: translateX(-50%) translateY(-10px); }
+  100% { transform: translateX(-50%) translateY(0); }
+}
+</style>
+
   </body>
 </html>
