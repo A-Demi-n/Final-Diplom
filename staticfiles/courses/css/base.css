@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #333;
-    background-image: url("/static/img/background.jpg"); /* путь к изображению */
+    background-image: url("/static/courses/img/background.jpg");
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     background: #efefef;
-    width: 100%;
+    width: 90%;
     overflow: auto;
     padding: 20px 0 20px 40px;
     margin: 0;
