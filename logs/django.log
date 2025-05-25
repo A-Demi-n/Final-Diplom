@@ -118,3 +118,180 @@ WARNING 2025-05-24 19:47:30,431 log Not Found: /.well-known/appspecific/com.chro
 INFO 2025-05-24 19:47:30,432 basehttp - Broken pipe from ('127.0.0.1', 52027)
 INFO 2025-05-24 19:47:33,251 basehttp "POST /workers/enroll-course/ HTTP/1.1" 302 0
 INFO 2025-05-24 19:47:35,604 basehttp "GET /workers/course/2/ HTTP/1.1" 200 12858
+INFO 2025-05-25 11:18:42,057 basehttp "GET / HTTP/1.1" 200 13601
+WARNING 2025-05-25 11:18:42,076 basehttp "GET /static/courses/css/base.css HTTP/1.1" 404 1987
+WARNING 2025-05-25 11:18:43,634 log Not Found: /favicon.ico
+WARNING 2025-05-25 11:18:43,636 basehttp "GET /favicon.ico HTTP/1.1" 404 13292
+INFO 2025-05-25 11:24:43,264 basehttp "GET / HTTP/1.1" 200 13601
+WARNING 2025-05-25 11:24:43,276 basehttp "GET /static/courses/css/base.css HTTP/1.1" 404 1987
+WARNING 2025-05-25 11:26:00,015 basehttp "GET /static/courses/css/base.css HTTP/1.1" 404 1987
+WARNING 2025-05-25 11:26:01,664 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 11:26:01,664 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-25 11:35:01,637 basehttp "GET / HTTP/1.1" 200 13601
+INFO 2025-05-25 11:35:01,657 basehttp "GET /static/courses/css/base.css HTTP/1.1" 200 6248
+WARNING 2025-05-25 11:35:03,186 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 11:35:03,186 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-25 11:35:10,537 basehttp "GET / HTTP/1.1" 200 13597
+WARNING 2025-05-25 11:35:12,011 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 11:35:12,014 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-25 11:35:17,468 basehttp - Broken pipe from ('127.0.0.1', 51808)
+INFO 2025-05-25 11:35:19,507 basehttp "GET /course/utyuzhniki/ HTTP/1.1" 200 12925
+WARNING 2025-05-25 11:35:20,951 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 11:35:20,951 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-25 11:35:22,804 basehttp "POST /workers/enroll-course/ HTTP/1.1" 302 0
+INFO 2025-05-25 11:35:25,486 basehttp "GET /workers/course/2/ HTTP/1.1" 200 12866
+WARNING 2025-05-25 11:35:26,927 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 11:35:26,927 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+INFO 2025-05-25 11:35:28,073 basehttp "GET /chat/room/2/ HTTP/1.1" 200 14553
+WARNING 2025-05-25 11:35:29,575 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 11:35:29,575 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 13440
+WARNING 2025-05-25 11:35:29,649 log Not Found: /ws/chat/room/2/
+WARNING 2025-05-25 11:35:29,650 basehttp "GET /ws/chat/room/2/ HTTP/1.1" 404 13308
+WARNING 2025-05-25 11:39:18,037 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 11:40:47,492 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 11:40:51,171 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 11:43:32,083 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 11:43:34,916 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 14:10:27,453 log Not Found: /static/courses/css/base.css
+WARNING 2025-05-25 16:48:04,670 log Not Found: /static/img/background.jpg
+WARNING 2025-05-25 16:52:04,071 log Not Found: /static/img/background.jpg
+WARNING 2025-05-25 19:49:14,364 log Not Found: /static/courses/img/background.png
+ERROR 2025-05-25 19:50:10,386 exception The joined path (D:\img\background.png) is located outside of the base path component (D:\Baha\PythonProjects\finaldiploma\apps\courses\static)
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\debug_toolbar\toolbar.py", line 82, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1075, in render
+    output = self.filter_expression.resolve(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 722, in resolve
+    obj = self.var.resolve(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 854, in resolve
+    value = self._resolve_lookup(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 901, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\debug_toolbar\panels\__init__.py", line 103, in content
+    return render_to_string(self.template, self.get_stats())
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 1075, in render
+    output = self.filter_expression.resolve(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 722, in resolve
+    obj = self.var.resolve(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 854, in resolve
+    value = self._resolve_lookup(context)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\template\base.py", line 925, in _resolve_lookup
+    current = current()
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\debug_toolbar\panels\staticfiles.py", line 26, in real_path
+    return finders.find(self.path)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\staticfiles\finders.py", line 354, in find
+    result = finder.find(path, find_all=find_all)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\staticfiles\finders.py", line 165, in find
+    matched_path = self.find_location(root, path, prefix)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\contrib\staticfiles\finders.py", line 182, in find_location
+    path = safe_join(root, path)
+  File "D:\Baha\PythonProjects\finaldiploma\.venv\lib\site-packages\django\utils\_os.py", line 31, in safe_join
+    raise SuspiciousFileOperation(
+django.core.exceptions.SuspiciousFileOperation: The joined path (D:\img\background.png) is located outside of the base path component (D:\Baha\PythonProjects\finaldiploma\apps\courses\static)
+WARNING 2025-05-25 19:50:10,569 log Bad Request: /
+WARNING 2025-05-25 19:51:29,574 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 19:55:03,030 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 19:57:48,042 log Not Found: /static/css/base.css
+WARNING 2025-05-25 19:57:48,101 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 19:57:57,492 log Not Found: /static/css/base.css
+WARNING 2025-05-25 19:58:35,016 log Not Found: /static/img/background.jpg
+WARNING 2025-05-25 20:02:10,064 log Not Found: /static/courses/img/background.jpg
+WARNING 2025-05-25 20:02:42,869 log Not Found: /courses/img/background.jpg
+WARNING 2025-05-25 20:03:05,470 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 20:03:55,603 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 20:03:57,112 log Not Found: /courses/img/background.jpg
+WARNING 2025-05-25 20:04:15,688 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 20:04:17,291 log Not Found: /courses/img/background.jpg
+WARNING 2025-05-25 20:05:41,939 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 20:05:43,477 log Not Found: /courses/img/background.jpg
+WARNING 2025-05-25 20:07:16,087 log Not Found: /static/courses/img/background.jpg
+WARNING 2025-05-25 20:07:17,554 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 20:07:20,338 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 20:07:21,874 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 20:08:01,156 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-05-25 20:08:02,685 log Not Found: /courses/img/background.jpg
+WARNING 2025-05-25 20:09:48,117 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
